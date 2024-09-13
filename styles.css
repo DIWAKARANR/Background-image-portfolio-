@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
-    color: #fff;
+    
     background-image: url('7XneJA.jpeg');
     background-size: cover;
     background-position: center;
@@ -52,7 +52,16 @@ nav a {
 
 nav a:hover {
     color: #00ffff;
-    text-shadow: 0 0 10px #00ffff
+    text-shadow: 0 0 10px #00ffff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 50, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 section {
@@ -144,5 +153,4 @@ section {
     to {
         transform: translateY(100vh);
     }
-    }
-    
+}
