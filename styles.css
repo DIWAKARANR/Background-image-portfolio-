@@ -3,18 +3,13 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Arial', sans-serif;
-}
-
-body {
+    color: #fff;
     background-image: url('7XneJA.jpeg');
-    display:flex;
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;
 }
-
 
 .snowfall {
     position: fixed;
@@ -23,7 +18,116 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 2;
+    z-index: 1;
+}
+
+header {
+    background-color: rgba(0, 0, 50, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 50, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+    color: #00ffff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 100, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+}
+
+.contact-container {
+    background-color: rgba(0, 0, 100, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+form button {
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 50, 0.7);
 }
 
 @keyframes fadeIn {
@@ -31,14 +135,16 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Rest of the CSS remains the same */
+section {
+    animation: fadeIn 1s ease-out;
+}
 
 .snowflake {
     position: fixed;
     top: -10px;
     color: #fff;
     user-select: none;
-    z-index: 2;
+    z-index: 1;
     animation: fall linear infinite;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
@@ -47,4 +153,5 @@ body {
     to {
         transform: translateY(100vh);
     }
-}
+    }
+    
